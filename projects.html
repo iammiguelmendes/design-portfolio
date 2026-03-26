@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Alex Voss</title>
+  <meta name="description" content="Selected projects across graphic design, UX/UI, and social media design." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/projects.css" />
+</head>
+<body>
+
+  <div class="page-transition"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="loader">
+    <div class="loader-logo gradient-text">AV.</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- ── Navbar ─────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">AV<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Page Header ────────────────────────────────────────── -->
+  <header class="page-header">
+    <div class="grid-bg"></div>
+    <div class="orb orb-blue" style="top:-20%;right:0%;"></div>
+    <div class="orb orb-purple" style="bottom:-10%;left:-5%;"></div>
+    <div class="container">
+      <p class="section-label reveal">All Projects</p>
+      <h1 class="reveal reveal-delay-1">Work that <span class="gradient-text">moves</span>.</h1>
+      <p class="text-muted reveal reveal-delay-2" style="max-width:500px;margin-top:16px;font-size:1.1rem;">
+        A curated selection of projects spanning branding, product design, and social campaigns.
+      </p>
+    </div>
+  </header>
+
+  <!-- ── Filter Bar ─────────────────────────────────────────── -->
+  <div class="filter-bar">
+    <div class="container">
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ux-ui">UX / UI</button>
+        <button class="filter-btn" data-filter="graphic">Graphic Design</button>
+        <button class="filter-btn" data-filter="social">Social Media</button>
+      </div>
+      <p class="project-count"><span id="count">9</span> projects</p>
+    </div>
+  </div>
+
+  <!-- ── Projects Grid ──────────────────────────────────────── -->
+  <main class="projects-section">
+    <div class="container">
+      <div class="projects-grid" id="projectsGrid">
+
+        <!-- Project 1 -->
+        <article class="project-card reveal reveal-delay-1" data-category="ux-ui">
+          <a href="project-detail.html?id=1" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#0d1f3c,#1a0533);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-screen"></div>
+                <div class="prev-el prev-mobile"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">UX / UI</span>
+                <span class="card-year">2025</span>
+              </div>
+              <h3>Nebula Finance App</h3>
+              <p class="text-muted">End-to-end mobile banking redesign. Research, wireframes, and a full design system built for trust and clarity.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Figma</span>
+                <span class="tool-chip">Protopie</span>
+                <span class="tool-chip">iOS</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card reveal reveal-delay-2" data-category="graphic">
+          <a href="project-detail.html?id=2" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#1a0f00,#0f001a);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-circle"></div>
+                <div class="prev-el prev-wordmark"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-purple">Graphic Design</span>
+                <span class="card-year">2025</span>
+              </div>
+              <h3>Aurum Brand Identity</h3>
+              <p class="text-muted">Complete brand identity for a luxury jewellery label — logo, typography, colour palette, and stationery.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Illustrator</span>
+                <span class="tool-chip">Photoshop</span>
+                <span class="tool-chip">InDesign</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card reveal reveal-delay-3" data-category="social">
+          <a href="project-detail.html?id=3" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#001a15,#000d1a);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-post prev-post-1"></div>
+                <div class="prev-el prev-post prev-post-2"></div>
+                <div class="prev-el prev-post prev-post-3"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-white">Social Media</span>
+                <span class="card-year">2025</span>
+              </div>
+              <h3>Luminary Campaign</h3>
+              <p class="text-muted">60-piece content system for a wellness brand's Instagram launch. Templates, carousels, and stories.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Figma</span>
+                <span class="tool-chip">After Effects</span>
+                <span class="tool-chip">Instagram</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card reveal reveal-delay-1" data-category="ux-ui">
+          <a href="project-detail.html?id=4" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#050d1a,#0d0519);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-dashboard"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">UX / UI</span>
+                <span class="card-year">2024</span>
+              </div>
+              <h3>Orbit SaaS Dashboard</h3>
+              <p class="text-muted">Analytics dashboard redesign for a B2B SaaS platform — complex data made scannable.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Figma</span>
+                <span class="tool-chip">Storybook</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 5 -->
+        <article class="project-card reveal reveal-delay-2" data-category="graphic">
+          <a href="project-detail.html?id=5" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#0d0500,#00050d);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-poster"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-purple">Graphic Design</span>
+                <span class="card-year">2024</span>
+              </div>
+              <h3>Nova Music Festival</h3>
+              <p class="text-muted">Poster series, wristbands, and stage backdrop for an electronic music festival.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Illustrator</span>
+                <span class="tool-chip">Photoshop</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 6 -->
+        <article class="project-card reveal reveal-delay-3" data-category="social">
+          <a href="project-detail.html?id=6" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#1a0019,#00101a);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-reel"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-white">Social Media</span>
+                <span class="card-year">2024</span>
+              </div>
+              <h3>Volt Tech LinkedIn</h3>
+              <p class="text-muted">Thought-leadership content strategy and visual system for a B2B tech startup on LinkedIn.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Figma</span>
+                <span class="tool-chip">Canva Pro</span>
+                <span class="tool-chip">LinkedIn</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 7 -->
+        <article class="project-card reveal reveal-delay-1" data-category="ux-ui">
+          <a href="project-detail.html?id=7" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#020a14,#14020a);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-screen"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag">UX / UI</span>
+                <span class="card-year">2024</span>
+              </div>
+              <h3>Meridian E-Commerce</h3>
+              <p class="text-muted">Full UX overhaul of a fashion e-commerce site — checkout conversion up 34%.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Figma</span>
+                <span class="tool-chip">Hotjar</span>
+                <span class="tool-chip">Shopify</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 8 -->
+        <article class="project-card reveal reveal-delay-2" data-category="graphic">
+          <a href="project-detail.html?id=8" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#0a0a00,#000a0a);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-book"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-purple">Graphic Design</span>
+                <span class="card-year">2023</span>
+              </div>
+              <h3>Hazel Editorial Design</h3>
+              <p class="text-muted">Long-form editorial layout and cover design for an independent literary magazine.</p>
+              <div class="card-tools">
+                <span class="tool-chip">InDesign</span>
+                <span class="tool-chip">Illustrator</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+        <!-- Project 9 -->
+        <article class="project-card reveal reveal-delay-3" data-category="social">
+          <a href="project-detail.html?id=9" class="card-link">
+            <div class="card-img" style="background:linear-gradient(135deg,#000f1a,#1a000f);">
+              <div class="card-img-overlay"></div>
+              <div class="card-preview">
+                <div class="prev-el prev-post prev-post-1"></div>
+                <div class="prev-el prev-post prev-post-2"></div>
+              </div>
+              <div class="card-hover-cta">View Project →</div>
+            </div>
+            <div class="card-body">
+              <div class="card-meta">
+                <span class="tag tag-white">Social Media</span>
+                <span class="card-year">2023</span>
+              </div>
+              <h3>Kova Skincare Launch</h3>
+              <p class="text-muted">Brand launch campaign across Instagram and TikTok — visual identity translated into scroll-stopping content.</p>
+              <div class="card-tools">
+                <span class="tool-chip">Figma</span>
+                <span class="tool-chip">Premiere</span>
+                <span class="tool-chip">TikTok</span>
+              </div>
+            </div>
+          </a>
+        </article>
+
+      </div><!-- /projects-grid -->
+
+      <!-- Empty State (hidden by default) -->
+      <div class="empty-state" id="emptyState" style="display:none;">
+        <p>No projects in this category yet.</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="nav-logo">AV<span style="color:var(--accent-blue)">.</span></a>
+      <ul class="footer-links">
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" title="Dribbble" aria-label="Dribbble">Dr</a>
+        <a href="#" class="social-link" title="Behance" aria-label="Behance">Be</a>
+        <a href="#" class="social-link" title="Instagram" aria-label="Instagram">Ig</a>
+      </div>
+      <p class="footer-copy">© 2026 Alex Voss. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nebula Finance App — Alex Voss</title>
+  <meta name="description" content="End-to-end mobile banking redesign focused on clarity and trust." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/project-detail.css" />
+</head>
+<body>
+
+  <div class="page-transition"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="loader">
+    <div class="loader-logo gradient-text">AV.</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- ── Navbar ─────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">AV<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Project Hero ───────────────────────────────────────── -->
+  <section class="project-hero">
+    <div class="grid-bg"></div>
+    <div class="orb orb-blue" style="top:-10%;right:0%;"></div>
+    <div class="orb orb-purple" style="bottom:0%;left:-5%;"></div>
+
+    <div class="container">
+      <!-- Breadcrumb -->
+      <div class="breadcrumb reveal">
+        <a href="projects.html">← All Projects</a>
+        <span>/</span>
+        <span>Nebula Finance App</span>
+      </div>
+
+      <div class="project-hero-grid">
+        <!-- Left: Info -->
+        <div class="project-hero-info">
+          <div class="project-category reveal">
+            <span class="tag">UX / UI</span>
+          </div>
+          <h1 class="reveal reveal-delay-1">Nebula<br /><span class="gradient-text">Finance App</span></h1>
+          <p class="project-tagline text-muted reveal reveal-delay-2">
+            Redesigning mobile banking for a generation that values clarity, speed, and trust.
+          </p>
+
+          <div class="project-meta-row reveal reveal-delay-3">
+            <div class="meta-item">
+              <span class="meta-label">Client</span>
+              <span class="meta-value">Nebula Financial</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Role</span>
+              <span class="meta-value">Lead UX/UI Designer</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Timeline</span>
+              <span class="meta-value">14 weeks</span>
+            </div>
+            <div class="meta-item">
+              <span class="meta-label">Year</span>
+              <span class="meta-value">2025</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Hero Mockup -->
+        <div class="project-hero-visual reveal reveal-delay-2">
+          <div class="hero-device">
+            <div class="device-frame">
+              <div class="device-screen">
+                <div class="screen-header">
+                  <div class="screen-dot"></div>
+                  <div class="screen-bar"></div>
+                  <div class="screen-dot"></div>
+                </div>
+                <div class="screen-card balance-card">
+                  <span class="bc-label">Total Balance</span>
+                  <span class="bc-amount">$24,891.50</span>
+                  <div class="bc-graph">
+                    <div class="graph-bar" style="height:40%"></div>
+                    <div class="graph-bar" style="height:65%"></div>
+                    <div class="graph-bar" style="height:50%"></div>
+                    <div class="graph-bar" style="height:80%"></div>
+                    <div class="graph-bar" style="height:60%"></div>
+                    <div class="graph-bar active" style="height:90%"></div>
+                  </div>
+                </div>
+                <div class="screen-actions">
+                  <div class="action-btn">Send</div>
+                  <div class="action-btn">Receive</div>
+                  <div class="action-btn">Cards</div>
+                </div>
+                <div class="screen-list">
+                  <div class="list-item"><div class="li-icon"></div><div class="li-info"><div class="li-name"></div><div class="li-date"></div></div><div class="li-amount negative"></div></div>
+                  <div class="list-item"><div class="li-icon"></div><div class="li-info"><div class="li-name"></div><div class="li-date"></div></div><div class="li-amount positive"></div></div>
+                  <div class="list-item"><div class="li-icon"></div><div class="li-info"><div class="li-name"></div><div class="li-date"></div></div><div class="li-amount negative"></div></div>
+                </div>
+              </div>
+            </div>
+            <!-- Floating accent card -->
+            <div class="floating-accent accent-1">
+              <span>+12.4%</span>
+              <small>vs last month</small>
+            </div>
+            <div class="floating-accent accent-2">
+              <span>✓</span>
+              <small>Payment sent</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Challenge & Approach ───────────────────────────────── -->
+  <section class="project-overview">
+    <div class="container">
+      <div class="overview-grid">
+        <div class="reveal">
+          <p class="section-label">The Challenge</p>
+          <h2>Old system,<br />new expectations.</h2>
+          <p class="text-muted" style="margin-top:20px;">
+            Nebula's existing app had a 2.1-star rating on the App Store. Users complained about confusing navigation,
+            buried key actions, and a visual design that felt dated and untrustworthy. The product team needed a
+            complete overhaul — not a facelift.
+          </p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <p class="section-label">The Approach</p>
+          <h2>Research first,<br />design always.</h2>
+          <p class="text-muted" style="margin-top:20px;">
+            We ran 18 user interviews, analysed heatmaps from 6 months of session recordings, and audited 12 competitor
+            apps. Every design decision in the final product traces back to a specific user insight or business goal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Process ────────────────────────────────────────────── -->
+  <section class="project-process">
+    <div class="container">
+      <p class="section-label reveal">Process</p>
+      <h2 class="reveal reveal-delay-1">How we got there.</h2>
+
+      <div class="process-steps">
+        <div class="process-step glass-card reveal reveal-delay-1">
+          <div class="step-num gradient-text">01</div>
+          <h3>Discovery</h3>
+          <p class="text-muted">18 user interviews · Heatmap analysis · Competitor audit · Stakeholder workshops</p>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step glass-card reveal reveal-delay-2">
+          <div class="step-num gradient-text">02</div>
+          <h3>Define</h3>
+          <p class="text-muted">Persona creation · User journey mapping · Jobs-to-be-done framework · Priority matrix</p>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step glass-card reveal reveal-delay-3">
+          <div class="step-num gradient-text">03</div>
+          <h3>Design</h3>
+          <p class="text-muted">Wireframes · Information architecture · High-fidelity UI · Design system (240+ components)</p>
+        </div>
+        <div class="process-connector" aria-hidden="true"></div>
+        <div class="process-step glass-card reveal reveal-delay-4">
+          <div class="step-num gradient-text">04</div>
+          <h3>Validate</h3>
+          <p class="text-muted">Moderated usability testing · A/B prototyping · Accessibility audit · Dev handoff</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Mockup Gallery ─────────────────────────────────────── -->
+  <section class="project-gallery">
+    <div class="container">
+      <p class="section-label reveal">Deliverables</p>
+      <h2 class="reveal reveal-delay-1">The final design.</h2>
+
+      <div class="gallery-grid">
+        <!-- Large mockup -->
+        <div class="gallery-item large reveal reveal-delay-1">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#060e1c,#130620);">
+            <div class="mock-ui-lg">
+              <div class="mui-header"></div>
+              <div class="mui-cards">
+                <div class="mui-card-1"></div>
+                <div class="mui-card-2"></div>
+              </div>
+              <div class="mui-list">
+                <div class="mui-row"></div>
+                <div class="mui-row"></div>
+                <div class="mui-row"></div>
+                <div class="mui-row"></div>
+              </div>
+            </div>
+          </div>
+          <p class="gallery-caption">Dashboard — Home Screen</p>
+        </div>
+
+        <!-- Small mockup 1 -->
+        <div class="gallery-item reveal reveal-delay-2">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#0d0019,#00050d);">
+            <div class="mock-ui-sm flow">
+              <div class="flow-step active"></div>
+              <div class="flow-step"></div>
+              <div class="flow-step"></div>
+            </div>
+          </div>
+          <p class="gallery-caption">Send Money — 3-Step Flow</p>
+        </div>
+
+        <!-- Small mockup 2 -->
+        <div class="gallery-item reveal reveal-delay-3">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#001019,#090019);">
+            <div class="mock-ui-sm colors">
+              <div class="color-swatch" style="background:var(--accent-blue)"></div>
+              <div class="color-swatch" style="background:var(--accent-purple)"></div>
+              <div class="color-swatch" style="background:#f0f0f8"></div>
+              <div class="color-swatch" style="background:#22c55e"></div>
+              <div class="color-swatch" style="background:#ef4444"></div>
+            </div>
+          </div>
+          <p class="gallery-caption">Design System — Colour Tokens</p>
+        </div>
+
+        <!-- Wide mockup -->
+        <div class="gallery-item wide reveal reveal-delay-1">
+          <div class="gallery-img" style="background:linear-gradient(135deg,#04090d,#0d0409);">
+            <div class="mock-ui-wide">
+              <div class="component-row">
+                <div class="comp comp-btn-primary"></div>
+                <div class="comp comp-btn-secondary"></div>
+                <div class="comp comp-input"></div>
+                <div class="comp comp-card"></div>
+              </div>
+            </div>
+          </div>
+          <p class="gallery-caption">Design System — Component Library</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Tools ──────────────────────────────────────────────── -->
+  <section class="project-tools">
+    <div class="container">
+      <div class="tools-inner">
+        <div class="reveal">
+          <p class="section-label">Tools Used</p>
+          <div class="tools-list">
+            <div class="tool-item glass-card">
+              <span class="tool-name">Figma</span>
+              <span class="tool-desc">UI Design & Prototyping</span>
+            </div>
+            <div class="tool-item glass-card">
+              <span class="tool-name">ProtoPie</span>
+              <span class="tool-desc">Advanced Interactions</span>
+            </div>
+            <div class="tool-item glass-card">
+              <span class="tool-name">Maze</span>
+              <span class="tool-desc">Usability Testing</span>
+            </div>
+            <div class="tool-item glass-card">
+              <span class="tool-name">Hotjar</span>
+              <span class="tool-desc">Session Recording</span>
+            </div>
+            <div class="tool-item glass-card">
+              <span class="tool-name">Notion</span>
+              <span class="tool-desc">Documentation</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-results reveal reveal-delay-2">
+          <p class="section-label">Outcomes</p>
+          <div class="results-list">
+            <div class="result-item">
+              <span class="result-num gradient-text" data-counter data-target="4" data-suffix=".8★">0</span>
+              <span class="result-label">App Store rating (post-launch)</span>
+            </div>
+            <div class="result-item">
+              <span class="result-num gradient-text" data-counter data-target="41" data-suffix="%">0%</span>
+              <span class="result-label">Increase in daily active users</span>
+            </div>
+            <div class="result-item">
+              <span class="result-num gradient-text" data-counter data-target="67" data-suffix="%">0%</span>
+              <span class="result-label">Reduction in support tickets</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Next Project ───────────────────────────────────────── -->
+  <section class="next-project">
+    <div class="container">
+      <div class="next-inner">
+        <div>
+          <p class="section-label">Next Project</p>
+          <h2 class="reveal">Aurum Brand Identity</h2>
+          <p class="text-muted reveal reveal-delay-1">Premium jewellery brand — from logo to full visual system.</p>
+        </div>
+        <a href="project-detail.html?id=2" class="btn btn-primary reveal reveal-delay-2">
+          View Project <span class="btn-icon">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="nav-logo">AV<span style="color:var(--accent-blue)">.</span></a>
+      <ul class="footer-links">
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" title="Dribbble" aria-label="Dribbble">Dr</a>
+        <a href="#" class="social-link" title="Behance" aria-label="Behance">Be</a>
+        <a href="#" class="social-link" title="Instagram" aria-label="Instagram">Ig</a>
+      </div>
+      <p class="footer-copy">© 2026 Alex Voss. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

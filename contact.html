@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Alex Voss</title>
+  <meta name="description" content="Let's work together. Get in touch with Alex Voss." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <div class="page-transition"></div>
+  <div id="cursor-dot"></div>
+  <div id="cursor-ring"></div>
+
+  <div id="loader">
+    <div class="loader-logo gradient-text">AV.</div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- ── Navbar ─────────────────────────────────────────────── -->
+  <nav class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="nav-logo">AV<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="nav-cta">Hire Me</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── Contact Hero ───────────────────────────────────────── -->
+  <section class="contact-hero">
+    <div class="grid-bg"></div>
+    <div class="orb orb-blue" style="top:-10%;right:-5%;"></div>
+    <div class="orb orb-purple" style="bottom:5%;left:-8%;"></div>
+
+    <div class="container">
+      <p class="section-label reveal">Contact</p>
+      <h1 class="reveal reveal-delay-1">
+        Let's build<br />
+        something <span class="gradient-text">remarkable</span>.
+      </h1>
+      <p class="contact-intro text-muted reveal reveal-delay-2">
+        I'm currently available for freelance and contract work.<br />
+        Reach out and let's talk about your project.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Main Contact Section ───────────────────────────────── -->
+  <section class="contact-main">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- ── Form ──────────────────────────────────────────── -->
+        <div class="form-wrapper reveal">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Jane Smith" required autocomplete="name" />
+                <span class="field-error" id="nameError"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="jane@company.com" required autocomplete="email" />
+                <span class="field-error" id="emailError"></span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <div class="subject-options">
+                <button type="button" class="subject-chip active" data-value="project">New Project</button>
+                <button type="button" class="subject-chip" data-value="freelance">Freelance</button>
+                <button type="button" class="subject-chip" data-value="collab">Collaboration</button>
+                <button type="button" class="subject-chip" data-value="other">Other</button>
+              </div>
+              <input type="hidden" id="subject" name="subject" value="project" />
+            </div>
+
+            <div class="form-group">
+              <label for="budget">Budget Range <span class="optional">(optional)</span></label>
+              <select id="budget" name="budget">
+                <option value="">Select a range…</option>
+                <option value="under-1k">Under $1,000</option>
+                <option value="1k-5k">$1,000 – $5,000</option>
+                <option value="5k-15k">$5,000 – $15,000</option>
+                <option value="15k-plus">$15,000+</option>
+                <option value="tbd">Let's discuss</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Tell me about your project — what you're building, who it's for, and what you need…"
+                rows="6"
+                required
+              ></textarea>
+              <div class="char-count"><span id="charCount">0</span> / 800</div>
+              <span class="field-error" id="messageError"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary submit-btn">
+              <span class="btn-text">Send Message</span>
+              <span class="btn-icon">→</span>
+              <span class="btn-loader" aria-hidden="true"></span>
+            </button>
+          </form>
+
+          <!-- Success State (hidden) -->
+          <div class="form-success" id="formSuccess" style="display:none;" aria-live="polite">
+            <div class="success-icon">✓</div>
+            <h3>Message sent!</h3>
+            <p class="text-muted">Thank you for reaching out. I'll get back to you within 1–2 business days.</p>
+            <button class="btn btn-secondary" id="resetForm">Send another →</button>
+          </div>
+        </div>
+
+        <!-- ── Sidebar ────────────────────────────────────────── -->
+        <aside class="contact-sidebar reveal reveal-delay-2">
+
+          <!-- Availability -->
+          <div class="sidebar-card glass-card">
+            <div class="avail-indicator">
+              <div class="avail-dot"></div>
+              <span>Available for work</span>
+            </div>
+            <p class="text-muted" style="font-size:0.875rem;margin-top:10px;">
+              Currently taking on freelance projects for Q2 2026. Response time: ~24 hours.
+            </p>
+          </div>
+
+          <!-- Direct contact -->
+          <div class="sidebar-card glass-card">
+            <p class="sidebar-label">Email directly</p>
+            <a href="mailto:hello@alexvoss.design" class="contact-email">
+              hello@alexvoss.design
+            </a>
+          </div>
+
+          <!-- Socials -->
+          <div class="sidebar-card glass-card">
+            <p class="sidebar-label">Find me online</p>
+            <div class="social-links-large">
+              <a href="#" class="social-link-large" aria-label="LinkedIn">
+                <div class="sll-icon">in</div>
+                <div class="sll-info">
+                  <span>LinkedIn</span>
+                  <small>@alexvoss</small>
+                </div>
+              </a>
+              <a href="#" class="social-link-large" aria-label="Dribbble">
+                <div class="sll-icon dr">Dr</div>
+                <div class="sll-info">
+                  <span>Dribbble</span>
+                  <small>@alexvoss</small>
+                </div>
+              </a>
+              <a href="#" class="social-link-large" aria-label="Behance">
+                <div class="sll-icon be">Be</div>
+                <div class="sll-info">
+                  <span>Behance</span>
+                  <small>@alexvoss</small>
+                </div>
+              </a>
+              <a href="#" class="social-link-large" aria-label="Instagram">
+                <div class="sll-icon ig">Ig</div>
+                <div class="sll-info">
+                  <span>Instagram</span>
+                  <small>@alexvoss.design</small>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Services quick reference -->
+          <div class="sidebar-card glass-card">
+            <p class="sidebar-label">I specialise in</p>
+            <ul class="service-list">
+              <li>Brand Identity &amp; Logo Design</li>
+              <li>UI / UX for Web &amp; Mobile</li>
+              <li>Design Systems</li>
+              <li>Social Media Content</li>
+              <li>Print &amp; Editorial Design</li>
+            </ul>
+          </div>
+
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FAQ ────────────────────────────────────────────────── -->
+  <section class="faq-section">
+    <div class="container">
+      <p class="section-label reveal">FAQ</p>
+      <h2 class="reveal reveal-delay-1">Common questions.</h2>
+
+      <div class="faq-grid">
+        <div class="faq-item glass-card reveal reveal-delay-1">
+          <h3>What's your typical project process?</h3>
+          <p class="text-muted">Discovery call → Proposal & SOW → Design sprints → Feedback loops → Final delivery. I keep you in the loop at every stage.</p>
+        </div>
+        <div class="faq-item glass-card reveal reveal-delay-2">
+          <h3>Do you work with clients remotely?</h3>
+          <p class="text-muted">Absolutely. 100% of my client work is remote. I use Figma, Loom, and Notion to keep collaboration seamless regardless of timezone.</p>
+        </div>
+        <div class="faq-item glass-card reveal reveal-delay-3">
+          <h3>How long do projects usually take?</h3>
+          <p class="text-muted">Brand identities: 3–5 weeks. UX/UI projects: 6–14 weeks. Social media systems: 2–4 weeks. Timelines depend on scope and revisions.</p>
+        </div>
+        <div class="faq-item glass-card reveal reveal-delay-4">
+          <h3>Do you offer revisions?</h3>
+          <p class="text-muted">Yes — every project includes structured revision rounds built into the timeline. I'd rather get it perfect than rush to delivery.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ─────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="nav-logo">AV<span style="color:var(--accent-blue)">.</span></a>
+      <ul class="footer-links">
+        <li><a href="projects.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="social-links">
+        <a href="#" class="social-link" title="LinkedIn" aria-label="LinkedIn">in</a>
+        <a href="#" class="social-link" title="Dribbble" aria-label="Dribbble">Dr</a>
+        <a href="#" class="social-link" title="Behance" aria-label="Behance">Be</a>
+        <a href="#" class="social-link" title="Instagram" aria-label="Instagram">Ig</a>
+      </div>
+      <p class="footer-copy">© 2026 Alex Voss. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
